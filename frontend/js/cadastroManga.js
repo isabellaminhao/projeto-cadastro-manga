@@ -99,14 +99,14 @@ formulario.addEventListener("submit", async function (event) {
             const novoManga = await resposta.json();
 
             mostrarMensagem(
-                "Mangá cadastrado com sucesso! ❤️",
+                "Mangá cadastrado com sucesso!",
                 "sucesso"
             );
 
             formulario.reset();
 
             setTimeout(function () {
-                window.location.href = "/pages/perfil.html";
+                window.location.href = "/frontend/pages/perfil.html";
             }, 1500);
 
         } else {
